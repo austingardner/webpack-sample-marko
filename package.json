@@ -3,10 +3,14 @@
   "description": "Sample app that demonstrates the power of building UI components using Marko and Webpack",
   "version": "1.0.0",
   "dependencies": {
+    "@ebay/browserslist-config": "^1.2.0",
+    "@ebay/ebayui-core": "^7.3.0-0.1",
+    "@ebay/skin": "^12.3.0-0.0",
+    "@marko/translator-default": "^5.5.1",
     "browserslist-useragent": "^3.0.3",
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "marko": "^5.1.8",
+    "marko": "^5.5.1",
     "raptor-pubsub": "^1.0.5"
   },
   "devDependencies": {

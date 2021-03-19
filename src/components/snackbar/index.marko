@@ -1,0 +1,29 @@
+class {
+   onCreate() {
+     this.state = { open: false };
+   }
+   handleButtonClick() {
+     this.state.open = true;
+   }
+   handleClose() {
+     this.state.open = false;
+   }
+   handleAction() {
+     alert('action alert from Snackbar.');
+   }
+}
+
+<div>
+  <ebay-button on-click('handleButtonClick')> 
+    Open Action snackbar 
+  </ebay-button> 
+  <ebay-snackbar-dialog open=state.open on-close('handleClose') on-action('handleAction')> 
+    <@action access-key='Undo'>
+      Undo
+    </@action>
+    Action Snackbar
+  </ebay-snackbar-dialog> 
+  <ebay-snackbar-dialog open=true >
+    This is the uncontrolled snackbar
+  </ebay-snackbar-dialog>
+</div>
